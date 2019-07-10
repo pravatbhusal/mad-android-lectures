@@ -9,4 +9,11 @@ You can also fork this repository and make pull requests, which I'll review and 
 There's no specified requirement to creating a pull request, just make it as clean and organized as you can.
 
 ### Lecture Content
-1. Lecture 1 - Basic Android
+Lecture 1 - Android Studio Basics  
+Lecture 2 - Resources, Java + XML  
+Lecture 3 - Android Lifecycle, Explicit Intents  
+Lecture 4 - Implicit Intents, Fragments  
+Lecture 5 - Dependencies, Snackbar, Picasso  
+Lecture 6 - Volley, Internet Permissions, RecyclerView  
+Lecture 7 - Material Design  
+Lecture 8 - SQLite
