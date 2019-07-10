@@ -57,7 +57,7 @@ Head on over to the ```res/layout``` folder to see all of your layout files.
 In a fresh new empty Android Studio project, you should see a file called ```activity_main.xml```.
 This file is the first page (also referred to as an activity) that will show when your app loads.
 
-Open the activity_main.xml file in Android Studio, and a design and text tab should appear.
+Open the ```activity_main.xml``` file in Android Studio, and a design and text tab should appear.
 - The design tab is the drag-and-drop tool that Android Studio provides to create the layout
 - The text tab is the XML code for the layout
 
