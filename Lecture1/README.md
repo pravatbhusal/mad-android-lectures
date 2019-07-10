@@ -12,6 +12,8 @@ We're going to keep up-to-date with the latest features brought by Android Studi
 Assuming you're viewing the ```Android``` folder structure on Android Studio, the files and folders
 below are essential to understanding how Android development works.
 
+<img src="lecture_materials/folder_structure.png" height="50%" width="50%"></img>
+
 ##### Gradle Scripts:
 The gradle scripts contain the configurations to develop your app.
 
