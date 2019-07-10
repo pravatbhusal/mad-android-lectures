@@ -1,2 +1,2 @@
-# mad-lectures
-UT Austin's MAD (Mobile App Dev) lectures and source code.
+# MAD Lectures
+This repository contains the MAD lectures created by Pravat Bhusal.
