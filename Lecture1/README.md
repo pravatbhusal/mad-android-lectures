@@ -12,7 +12,7 @@ We're going to keep up-to-date with the latest features brought by Android Studi
 Assuming you're viewing the ```Android``` folder structure on Android Studio, the files and folders
 below are essential to understanding how Android development works.
 
-##### ```Gradle Scripts```:
+##### Gradle Scripts:
 The gradle scripts contain the configurations to develop your app.
 
 1. ```build.gradle (Project)```: Configuration for all modules
@@ -22,7 +22,7 @@ The gradle scripts contain the configurations to develop your app.
 
 In MAD, we're only going to worry about the ```build.gradle (Module)``` file.
 
-##### ```app``` folder:
+##### app folder:
 The app folder contains the source code and assets used to create your app.
 
 1. ```manifests``` folder.
@@ -30,11 +30,11 @@ The app folder contains the source code and assets used to create your app.
         - Presents essential information about your app to the phone
 
 2. ```java``` folder.
-    - ```main``` source: Contains the primary Java source code that your app runs on
-    - ```androidTest``` source: Unit tests to test your Android app's functionality
-    - ```test``` source: Pure Unit tests that are not Android-specific
+    - ```main``` source folder: Contains the primary Java source code that your app runs on
+    - ```androidTest``` source folder: Unit tests to test your Android app's functionality
+    - ```test``` source folder: Pure Unit tests that are not Android-specific
 
-In MAD, we're only going to focus on the ```main``` source folder.
+    In MAD, we're only going to focus on the ```main``` source folder.
 
 3. ```res``` (resource) folder.
     - ```drawable``` folder: Visual assets such as images, backgrounds, etc.
