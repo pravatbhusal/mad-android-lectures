@@ -1,5 +1,5 @@
 # Lecture 1 - Android Studio Basics
-### Setting-up Android Studio
+### 1. Setting-up Android Studio
 We're going to keep up-to-date with the latest features brought by Android Studio. The steps below will show you how to do that.
 
 1. Install Android Studio [here](https://developer.android.com/studio/install).  
@@ -8,7 +8,7 @@ We're going to keep up-to-date with the latest features brought by Android Studi
 3. Install the latest Tools in Android Studio by going to Tools -> SDK Manager -> SDK Tools.  
 4. Now restart Android Studio.
 
-### Folder Structure
+### 2. Folder Structure
 Assuming you're viewing the ```Android``` folder structure on Android Studio, the files and folders
 below are essential to understanding how Android development works.
 
@@ -43,7 +43,7 @@ The app folder contains the source code and assets used to create your app.
     - ```values``` folder: Configuration files such as texts, styling, etc.
         - The ```values``` folder is very important for [locales](https://developer.android.com/training/basics/supporting-devices/languages)
 
-### XML Layout
+### 3. XML Layout
 An Android app's layouts (UI) are coded in XML. XML is a markup language that is very similar to HTML.
 In fact, if you've ever worked with HTML before, then XML would be very easy to grasp since the concepts are the same.
 
@@ -80,14 +80,14 @@ For example, an element can be positioned to the left of another element, or on 
 ##### Linear Layout
 A layout that can "stack" elements vertically or push elements horizontally.
 
-### Element Ids
+##### Element Ids
 Each element must have a unique id to distinguish it from other elements. This is necessary for referencing
 the elements from the layout to the Java source code.
 
 For instance, in this lecture's ```activity_main.xml```, the purple button has an id of ```purpleBTN``` while
 the top text has an id of ```headerText```.
 
-### Element Attributes
+##### Element Attributes
 Each element has their individual attributes, which can be edited within the UI tool in Android Studio.
 
 For instance, in this lecture's ```activity_main.xml```, you can see a button with a purple background color
@@ -97,7 +97,7 @@ and green button text. These were attributes that were modified from the origina
 
 To best understand an element's attributes, you just need to play around with them and keep modifying them.
 
-### Java Source Code
+### 4. Java Source Code
 An Android app's source and functionality are coded in Java. Java is a high-level language that is similar to C.  
 If you've ever worked with a C-based language before, then Java's syntax would seem familiar to you.
 
@@ -111,7 +111,7 @@ The ```MainActivity.java``` is linked to your ```activity_main.xml``` in the ```
 the ```setContentView(R.layout.activity_main)``` function. This function links the Java source code to the
 XML layout, which allows you to access the elements from XML within the Java code.
 
-### Logcat
+### 5. Logcat
 Although the standard Java console works in Android Studio, Android programmers are advised to use Logcat.
 - Logcat: A command-line tool that dumps a log of system messages for debugging
 - To start Logcat, go to Run -> Debug 'app'
@@ -129,7 +129,7 @@ There are multiple methods to logging messages onto Logcat, some of them are:
 
 You may use ```System.out.println``` for logging messages, but it's conventional to just use ```Log```.
 
-### Running The App
+### 6. Running The App
 You can either install an Android emulator or use your Android phone to run the app.
 
 ##### Using an Emulator:
