@@ -14,16 +14,6 @@ below are essential to understanding how Android development works.
 
 <img src="lecture_materials/folder_structure.png" height="25%" width="25%"></img>
 
-##### Gradle Scripts:
-The gradle scripts contain the configurations to develop your app.
-
-1. ```build.gradle (Project)```: Configuration for all modules
-    - A module is like a project from the Eclipse IDE
-2. ```build.gradle (Module)```: Configuration for individual modules
-    - Dependency management, API version, etc.
-
-In MAD, we're only going to worry about the ```build.gradle (Module)``` file.
-
 ##### app folder:
 The app folder contains the source code and assets used to create your app.
 
@@ -44,6 +34,16 @@ The app folder contains the source code and assets used to create your app.
     - ```mipmap``` folder: Your app's icon that's shown when downloading it on the phone
     - ```values``` folder: Configuration files such as texts, styling, etc.
         - The ```values``` folder is very important for [locales](https://developer.android.com/training/basics/supporting-devices/languages)
+
+##### Gradle Scripts:
+The gradle scripts contain the configurations to develop your app.
+
+1. ```build.gradle (Project)```: Configuration for all modules
+    - A module is like a project from the Eclipse IDE
+2. ```build.gradle (Module)```: Configuration for individual modules
+    - Dependency management, API version, etc.
+
+In MAD, we're only going to worry about the ```build.gradle (Module)``` file.
 
 ### 3. XML Layout
 An Android app's layouts (UI) are coded in XML. XML is a markup language that is very similar to HTML.
