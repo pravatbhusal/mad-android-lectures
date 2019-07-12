@@ -4,7 +4,7 @@ The res (resources) folder contains your app's assets such as images, designs, b
 In this lecture, we're going to understand this folder and how to manage your app's resources.
 
 The below steps are examples to using each resource folder. If you downloaded this repository, then
-all of these steps are already done for you, so it'd just merely be available for reference.
+all of these steps are already done for you, so it's just there for reference.
 
 ##### 1. ```drawable``` folder
 The drawable folder contains your app's images, backgrounds, vector art. We can actually add new
@@ -74,6 +74,8 @@ Remember, XML is the layout code of your app while Java is the functionality cod
 app to work properly, we link Java and XML together.
 
 We're going to do that using a Button in the XML layout and calling a Java function whenever it's clicked!
+
+If you downloaded this repository, then all of the steps below are already done for you, so it's just there for reference.
 
 1. In the ```activity_main.xml``` file, drag and drop a Button.  
 2. Change the Button's id to ```clickMeBTN```. Then change its text attribute to "Click Me".  
