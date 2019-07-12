@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lecture2</string>
+    <string name="hello_world">Hello World</string>
+    <string name="click_me">Click Me</string>
 </resources>
