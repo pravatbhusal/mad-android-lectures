@@ -48,9 +48,10 @@ In an empty Android project, the ```values``` folder contains 3 files:
 - ```colors.xml```: Variables for the color scheme
 - ```styles.xml```: A stylesheet for your app's theme
 
-Let's add a new variable into ```strings.xml``` and use it in our layout!  
+Let's add some new variables into ```strings.xml``` and use it in our layout!  
 1. Add a new line inside the ```<resources>``` tag: ```<string name="hello_world">Hello World</string>```  
-2. In the ```activity_main.xml``` file, then drag and drop a TextView.  
+2. Add another new line inside the ```<resources>``` tag: ```<string name="goodbye_world">Goodbye World</string>```  
+2. In the ```activity_main.xml``` file, drag and drop a TextView.  
 3. Change the TextView's ``text`` attribute to ```@string/hello_world```  
 4. Notice how the text changed to "Hello World!" on the TextView. This is because it's using the ```hello_world```
 variable from the ```strings.xml``` file.
@@ -81,22 +82,27 @@ If you downloaded this repository, then all of the steps below are already done 
 2. Change the Button's id to ```clickMeBTN```. Then change its text attribute to "Click Me".  
 - It's advised to change the text attribute using a String variable from ```strings.xml```!
 3. Now open the ```java/com.mad.lecture2/MainActivity.java``` file.
-4. Add a class (global) variable ```private Button clickMeBTN;```, do not initialize it.  
-- This variable will become a reference to the ```clickMeBTN``` within the layout XML file
+4. Add a class (global) variable ```private Button clickMeBTN;```, do not initialize it.
+- This variable will become a reference to the ```clickMeBTN``` within the layout XML file 
+5. Add another class variable ```private TextView msgText```, do not initialize it.
+- This variable will become a reference to the ```msgText``` within the layout XML file
 5. In the ```onCreate``` method, add ```clickMeBTN = findViewById(R.id.clickMeBTN);```
 - This line of code links the ```clickMeBTN``` variable in Java to the Button in XML
+6. In the ```onCreate``` method, also add ```msgText = findViewById(R.id.msgText);```
+- This line of code links the ```msgText``` variable in Java to the TextView in XML
 
-So now the XML layout's ```clickMeBTN``` is linked to the Java variable ```clickMeBTN```. Now we can
-program an onClick listener (a function that execute whenever clicking the button) to our Java code.
+So now the XML layout's ```clickMeBTN``` is linked to the Java variable ```clickMeBTN```, and the XML
+layout's ```msgText``` is linked to the Java variable ```msgText```. Now we can program an onClick
+listener (a function that execute whenever clicking the button) to our Java code.
 
 6. Add this piece of code outside of the ```onCreate``` method but inside the Java class:  
 ```java
-// log "Hello World" to logcat
-private void printHelloWorld() {
-    Log.d("helloWorld", "Hello World!");
+// change the message text to "Goodbye World"
+private void sayGoodbye() {
+    msgText.setText(R.string.goodbye_world);
 }
 ```
-This piece of code is a function to log "Hello World".
+This piece of code is a function to change the msgText TextView to "Goodbye World".
 
 7. Now inside the ```onCreate``` method, add this code:  
 ```java
@@ -104,17 +110,23 @@ This piece of code is a function to log "Hello World".
 clickMeBTN.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        printHelloWorld();
+        sayGoodbye();
     }
 });
 ```
 This piece of code is an onClick listener to listen to clicking events on the ```clickMeBTN```. Once
 a clicking event is heard, it will call the ```onClick``` method within the listener. Inside the
-```onClick``` method, it will call the ```printHelloWorld``` function.
+```onClick``` method, it will call the ```sayGoodbye``` function.
 
-So basically, whenever the user clicks the "Click Me" button, it will print "Hello World!" on Logcat.
+So basically, whenever the user clicks the "Click Me" button, it changes the msgText to "Goodbye World".
 
 Since you've learned to link elements XML layouts to Java code, try programming other things now!  
-A cool excerise could be changing the color of a TextView whenever clicking a Button.
+A cool exercise could be changing the color of a TextView whenever clicking a Button.
 
+### 3. Documentation
+You may be wondering where you can learn about the XML attributes and Java methods to layout elements.
+Fortunately, all that information can be provided by the [Android Documentation](https://developer.android.com/reference).
+
+For example, [here](https://developer.android.com/reference/android/widget/TextView) is the documentation for TextView.
+- If you look through the TextView documentation, you can find the ```setText``` Java method we used!
 
