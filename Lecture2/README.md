@@ -24,7 +24,8 @@ new image into our project, so let's use this image in our ```main_activity.xml`
 1. Open the ```res/layout/activity_main.xml``` file in Android Studio, then open the design tab.  
 2. Drag and drop an ImageView onto the layout.  
 3. When choosing an image in the ImageView pop-up, choose the ```longhorn.png``` file, then press OK.  
-4. The image is now on your layout! Make sure to add constraints to the image to prevent layout errors.
+
+The image is now on your layout! Make sure to add constraints to the image to prevent layout errors.
 
 ##### 3. ```mipmap``` folder
 The mipmap folder contains your app's icon that are shown whenever its downloaded on a phone.
@@ -52,13 +53,15 @@ Let's add some new variables into ```strings.xml``` and use it in our layout!
 1. Add a new line inside the ```<resources>``` tag: ```<string name="hello_world">Hello World</string>```  
 2. Add another new line inside the ```<resources>``` tag: ```<string name="goodbye_world">Goodbye World</string>```  
 2. In the ```activity_main.xml``` file, drag and drop a TextView.  
-3. Change the TextView's ``text`` attribute to ```@string/hello_world```  
-4. Notice how the text changed to "Hello World!" on the TextView. This is because it's using the ```hello_world```
+3. Change the TextView's id to ```msgText```, then change the TextView's ``text`` attribute to ```@string/hello_world```  
+
+Notice how the text changed to "Hello World!" on the TextView. This is because it's using the ```hello_world```
 variable from the ```strings.xml``` file.
 
 Now that we just learned how to use the ```strings.xml``` file, let's configure the ```colors.xml```  
 1. Configure the colors inside the ```<color>``` tag to whatever color scheme you wish.  
-2. That's about it. If you want to add new colors and use them in your layout, you can do it like we did
+
+That's about it. If you want to add new colors and use them in your layout, you can do it like we did
 in the ```strings.xml``` but instead use a new ```<color>``` tag.
 
 Since we just messed around with the ```colors.xml```, let's do the same for ```styles.xml```.
