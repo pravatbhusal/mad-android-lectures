@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lecture3</string>
+    <string name="go_to_lifecycle_activity">Go To LifeCycle Activity</string>
+</resources>
