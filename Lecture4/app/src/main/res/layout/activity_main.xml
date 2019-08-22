@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/browserBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openBrowser"
+        android:text="Browser"
+        app:layout_constraintBaseline_toBaselineOf="@+id/phoneBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phoneBTN" />
+
+    <Button
+        android:id="@+id/cameraBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="189dp"
+        android:onClick="openCamera"
+        android:text="Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/emailBTN"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/phoneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="openPhone"
+        android:text="Phone"
+        app:layout_constraintEnd_toStartOf="@+id/browserBTN"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraBTN" />
+
+    <Button
+        android:id="@+id/emailBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openEmail"
+        android:text="Email"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cameraBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraBTN" />
+
+    <fragment
+        android:id="@+id/helloWorldFragment"
+        android:name="com.mad.lecture4.HelloWorldFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_hello_world" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
