@@ -19,7 +19,7 @@ A fragment is a piece of an Activity, like a sub-activity, that enables modular 
 own life cycle and behaviors, and you can combine multiple fragments within a parent Activity to
 build a multi-pane UI.
 
-THe ```HelloWorldFragment.java``` file is an example of the Java code for a fragment. Unlike a typical
+The ```HelloWorldFragment.java``` file is an example of the Java code for a fragment. Unlike a typical
 Activity, a Fragment will extend the "Fragment" class to denote that it's a fragment. The
 ```fragment_hello_world.xml``` file is the XML layout for the ```HelloWorldFragment.java``` class.
 
