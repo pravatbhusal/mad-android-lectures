@@ -32,8 +32,7 @@ Snackbar.make(contentView, "Loaded the Android app!", Snackbar.LENGTH_LONG).show
 The Snackbar has been set-up! Now whenever you load the application, it will show a Snackbar for
 a long period of time that says "Loaded the Android app!" on your Android app.
 
-Find out more about the Android Design Support dependency from the [documentation]
-(https://developer.android.com/reference/android/support/design/package-summary.html).
+Find out more about the Android Design Support dependency from the [documentation](https://developer.android.com/reference/android/support/design/package-summary.html).
 
 ### 3. Picasso
 The second depdenency we're going to install is called "Picasso". Picasso is a power image library
@@ -67,5 +66,4 @@ Picasso.get().load(url).into(picassoImage);
 ```
 Now whenever you load the application, it will load the image from the ```url``` Java variable into the ImageView.
 
-Find out more about the Picasso dependency from the [documentation]
-(https://square.github.io/picasso/).
+Find out more about the Picasso dependency from the [documentation](https://square.github.io/picasso/).
