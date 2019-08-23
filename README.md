@@ -18,4 +18,4 @@ Lecture 6 - Volley, RecyclerView
 Lecture 7 - Shared Preferences  
 Lecture 8 - Material Design
 
-Each lecture is taught once a week. Don't expect the lectures to teach you everything, but instead it teaches you the foundations about Android development to help you be confident enough to program your own Android applications.
+Each lecture is taught once a week. Don't expect the lectures to teach you everything, but instead it teaches you the foundations of Android development to help you be confident enough to program your own Android applications.
