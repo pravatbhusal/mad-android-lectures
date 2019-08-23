@@ -21,7 +21,7 @@ repository, but follow along to see how it was done.
 
 Now that the Android Design Support dependency is installed, we can import the Snackbar onto our Java
 code from the dependency we just installed.
-1. Import the Snackbar class in the top of the ```MainActivity.java``` class:
+1. Import the Snackbar class in the top of the ```MainActivity.java``` class:  
 ```import com.google.android.material.snackbar.Snackbar;```
 2. In your ```MainActivity.java``` file, add these lines of code inside the ```onCreate``` method:
 ```java
