@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         // load the image from the URL onto the picassoImage ImageView
         ImageView picassoImage = (ImageView) findViewById(R.id.picassoImage);
-        String url = "https://avatars3.githubusercontent.com/u/5356292?s=200&v=4";
+        String url = "https://raw.githubusercontent.com/Shadowsych/mad-android-lectures/master/Lecture5/lecture_materials/mad_icon.png";
         Picasso.get().load(url).into(picassoImage);
     }
 }
