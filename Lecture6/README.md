@@ -19,7 +19,7 @@ is passed the response data as a JSONObject parameter.
 Here's what the JSONObject contains:
 ```json
 {
-    "item1": "This is item 1,",
+    "item1": "This is item 1.",
     "item2": "This is item 2.",
     "item3": "This is item 3."
 }
@@ -41,3 +41,12 @@ the RecyclerView using the JSON data from the Volley section.
 
 But how does the RecyclerAdapter work? It's too much of an explanation, so the code is provided within the
 ```RecyclerAdapter.java``` file with comments explaining how the adapter adds each item into the RecyclerView.
+
+Once you run the app, you will see a RecyclerView with 3 TextViews as:
+```
+This is item 1.
+This is item2.
+This is item3.
+```
+
+This is the same data that was loaded from the JSONObject!
