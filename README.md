@@ -14,6 +14,6 @@ Lecture 2 - Resources, Java + XML
 Lecture 3 - Android Lifecycle, Explicit Intents  
 Lecture 4 - Implicit Intents, Fragments  
 Lecture 5 - Dependencies, Snackbar, Picasso  
-Lecture 6 - Volley, Internet Permissions, RecyclerView  
+Lecture 6 - Volley, RecyclerView  
 Lecture 7 - SQLite  
 Lecture 8 - Material Design
