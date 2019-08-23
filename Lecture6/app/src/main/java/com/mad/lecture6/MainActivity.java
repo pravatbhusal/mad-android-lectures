@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         // instantiate the RequestQueue
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://www.google.com";
+        String url = "https://raw.githubusercontent.com/Shadowsych/mad-android-lectures/master/Lecture6/lecture_materials/items.json";
 
         // request a JSON response from the provided URL
         JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.GET, url, null,
