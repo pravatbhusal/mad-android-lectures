@@ -1,5 +1,5 @@
-# MAD Android Lectures
-This repository contains the MAD lectures created by Pravat Bhusal.
+# UT Austin - MAD Android Lectures
+This repository contains the Mobile App Development (MAD) lectures created by Pravat Bhusal.
 
 Each lecture folder contains Markdown file(s) that detail the material taught for the lecture, so if you couldn't understand the lecture during class or need a refresher then this repository is provided for your use. Also feel free to go ahead and learn the future lectures that haven't yet been taught.
 
