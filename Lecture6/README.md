@@ -48,5 +48,3 @@ This is item 1.
 This is item2.
 This is item3.
 ```
-
-This is the same data that was loaded from the JSONObject!
