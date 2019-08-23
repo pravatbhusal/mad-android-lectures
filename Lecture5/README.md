@@ -9,7 +9,7 @@ integration to function properly in the app.
 The first dependency we're going to install is called "Snackbar". A Snackbar is an alert UI component
 that shows a message in your Android app.
 
-<img src="lecture_materials/snackbar_example.png" height="25%" width="25%"></img>
+<img src="lecture_materials/snackbar_example.png" height="50%" width="50%"></img>
 
 Let's install the Snackbar dependency on our Android app! These steps have already been done in this
 repository, but follow along to see how it was done.
@@ -29,8 +29,11 @@ View contentView = findViewById(android.R.id.content);
 Snackbar.make(contentView, "Loaded the Android app!", Snackbar.LENGTH_LONG).show();
 ```
 
-The Snackbar has been set-up! Now whenever you load the application, it will show a Snackbar that
-says "Loaded the Android app!" on your Android app.
+The Snackbar has been set-up! Now whenever you load the application, it will show a Snackbar for
+a long period of time that says "Loaded the Android app!" on your Android app.
+
+Find out more about the Android Design Support dependency from the [documentation]
+(https://developer.android.com/reference/android/support/design/package-summary.html).
 
 ### 3. Picasso
 The second depdenency we're going to install is called "Picasso". Picasso is a power image library
@@ -56,10 +59,13 @@ first we need to request Internet permissions on the Android app.
 ```<uses-permission android:name="android.permission.INTERNET" />```
 
 Now let's load an image from online onto the ImageView we created.
-1. Add this piece of code in ```MainActivity.java``` inside the ```onCreate``` method:  
+1. Add this piece of code in ```MainActivity.java``` inside the ```onCreate``` method:
 ```java
 ImageView picassoImage = (ImageView) findViewById(R.id.picassoImage);
 String url = "https://avatars3.githubusercontent.com/u/5356292?s=200&v=4";
 Picasso.get().load(url).into(picassoImage);
 ```
-This loads the image from the ```url``` Java variable into the ImageView.
+Now whenever you load the application, it will load the image from the ```url``` Java variable into the ImageView.
+
+Find out more about the Picasso dependency from the [documentation]
+(https://square.github.io/picasso/).
