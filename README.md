@@ -15,7 +15,7 @@ Lecture 3 - Android Lifecycle, Explicit Intents
 Lecture 4 - Implicit Intents, Fragments  
 Lecture 5 - Dependencies, Snackbar, Picasso  
 Lecture 6 - Volley, RecyclerView  
-Lecture 7 - SQLite  
+Lecture 7 - Shared Preferences  
 Lecture 8 - Material Design
 
 Each lecture is taught once a week. Don't expect the lectures to teach you everything, but instead it teaches you the foundations about Android development to help you be confident enough to program your own Android applications.
